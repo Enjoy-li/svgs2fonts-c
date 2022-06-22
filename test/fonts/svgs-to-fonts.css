@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: 'svgs-to-fonts';
+  src: url('svgs-to-fonts.eot');
+  src: url('svgs-to-fonts.woff2') format('woff2'),
+    url('svgs-to-fonts.woff') format('woff'),
+    url('svgs-to-fonts.eot#IEfix') format('embedded-opentype'), /* IE6-IE8 */  
+    url('svgs-to-fonts.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('svgs-to-fonts.svg') format('svg');
+}
+  .u-iconfont{
+    font-family: "svgs-to-fonts" !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    display: inline-block;
+  }
+  
+.icon-daichuli:before { content: "\8479"; }
+.icon-daimianshi:before { content: "\8b23"; }
+.icon-offer:before { content: "\8210"; }
+.icon-shaixuan:before { content: "\9568"; }
