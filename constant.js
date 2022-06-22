@@ -3,7 +3,7 @@
  */
 
 module.exports = {
-  timeTag: 'svgs2fonts time-consuming',
+  timeTag: "svgs2fonts time-consuming",
   fontNameReg: /\{\{fontName\}\}/g,
   demoCssReg: /\{\{demoCss\}\}/,
   demoHtmlReg: /\{\{demoHtml\}\}/,
@@ -105,7 +105,12 @@ module.exports = {
 <body>
   <style type="text/css">
   .u-iconfont{
-    font-size: 26px;
+    font-size:40px;
+    cursor: pointer;
+    transition:font-size 0.3s linear;
+  }
+   .u-iconfont:hover{
+    font-size: 80px;
   }
   </style>
 
