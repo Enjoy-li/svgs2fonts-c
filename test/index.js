@@ -1,6 +1,5 @@
 const svgs2fonts = require("../index.js");
 const join = require("path").join;
-
 svgs2fonts.init({
   src: join(__dirname, "./svgs/"), // svg path
   dist: join(__dirname, "./fonts/"), // output path

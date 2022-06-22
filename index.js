@@ -6,10 +6,10 @@
  * @email: michealwayne@163.com
  */
 
-const mkdirp = require('mkdirp');
-const Builder = require('./lib/Builder');
-const OPTIONS = require('./options');
-const { timeTag } = require('./constant');
+const mkdirp = require("mkdirp");
+const Builder = require("./lib/Builder");
+const OPTIONS = require("./options");
+const { timeTag } = require("./constant");
 
 module.exports = {
   /**
@@ -19,7 +19,7 @@ module.exports = {
   init(options) {
     return new Promise((resolve, reject) => {
       options.dist = options.dist || OPTIONS.dist;
-      options.src = options.src || '';
+      options.src = options.src || "";
 
       const { noDemo, dist, debug } = options;
       if (debug) {
@@ -29,29 +29,29 @@ module.exports = {
       Builder.init(options);
 
       const _timer = setTimeout(() => {
-        OPTIONS.logger.error('[failed] timeout');
-        reject(new Error('timeout'));
+        OPTIONS.logger.error("[failed] timeout");
+        reject(new Error("timeout"));
       }, options.timeout || OPTIONS.timeout);
       const _successFunc = () => {
         clearTimeout(_timer);
         OPTIONS.logger.timeEnd(timeTag);
         resolve(true);
       };
-      const _failFunc = e => {
+      const _failFunc = (e) => {
         clearTimeout(_timer);
         OPTIONS.logger.timeEnd(timeTag);
         reject(e);
       };
 
       // mkdir output folder
-      mkdirp.sync(dist, err => {
-        OPTIONS.logger.error('mkdirp failed.', err);
+      mkdirp.sync(dist, (err) => {
+        OPTIONS.logger.error("mkdirp failed.", err);
         reject(err);
       });
 
       return Builder.svg()
         .then(() => {
-          OPTIONS.logger.log('[success] svg builded.');
+          OPTIONS.logger.log("[success] svg builded.");
           Builder.ttf()
             .then(() =>
               Promise.all([Builder.eot(), Builder.woff(), Builder.woff2()])
