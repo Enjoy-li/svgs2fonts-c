@@ -1,14 +1,14 @@
 {
   "name": "svgs2fonts-c",
-  "version": "1.0.0",
-  "description": "svgs2fonts:在其基础上增加了生成css文件和增加了参数。svg icons to icons fonts(svg,ttf,eot,woff,woff2)",
+  "version": "1.0.1",
+  "description": "On the basis of 'svgs2fonts' dependency, the corresponding CSS file is added to facilitate the introduction. At the same time, parameters are added to optimize the generation of results",
   "main": "index.js",
   "scripts": {
     "test": "node test/index"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/MichealWayne/svgs2fonts.git"
+    "url": "https://github.com/Enjoy-li/svgs2fonts-c.git"
   },
   "keywords": [
     "svg",
@@ -22,9 +22,9 @@
   "author": "Micheal Wayne",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichealWayne/svgs2fonts.git"
+    "url": "https://github.com/Enjoy-li/svgs2fonts-c.git"
   },
-  "homepage": "https://github.com/MichealWayne/svgs2fonts.git",
+  "homepage": "https://github.com/Enjoy-li/svgs2fonts-c.git",
   "dependencies": {
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
