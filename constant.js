@@ -40,9 +40,6 @@ module.exports = {
     margin: 0;
     padding: 0;
   }
-  html, body {
-    width: 100%;
-  }
   li {
     list-style: none;
     text-align: center;
@@ -55,56 +52,7 @@ module.exports = {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
-  @-webkit-keyframes colors {
-    from {
-      font-size: 26px;
-      color: red;
-    }
-    25% {
-      color: yellow;
-    }
-    50% {
-      font-size: 66px;
-      color: green;
-    } 
-    75% {
-      color: blue;
-    }
-    to {
-      font-size: 26px;
-      color: red;
-    }
-  }
-  @keyframes colors {
-    from {
-      font-size: 26px;
-      color: red;
-    }
-    25% {
-      color: yellow;
-    }
-    50% {
-      font-size: 66px;
-      color: green;
-    } 
-    75% {
-      color: blue;
-    }
-    to {
-      font-size: 26px;
-      color: red;
-    }
-  }
-  </style>
-  <style type="text/css">
-  {{demoCss}}
-  </style>
-  <title>iconfont demo</title>
-</head>
-<body>
-  <style type="text/css">
-  .u-iconfont{
+    .u-iconfont{
     font-size:40px;
     cursor: pointer;
     transition:font-size 0.3s linear;
@@ -113,13 +61,17 @@ module.exports = {
     font-size: 80px;
   }
   </style>
-
+  <style type="text/css">
+  {{demoCss}}
+  </style>
+  <title>iconfont demo</title>
+</head>
+<body>
   <h1>iconfont</h1>
   <ul>
   <!-- <em class="u-iconfont">&#xE002;</em> -->
   {{demoHtml}}
   </li>
-
 </body>
 </html>
   `,
