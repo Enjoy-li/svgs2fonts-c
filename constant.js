@@ -69,7 +69,7 @@ module.exports = {
 <body>
   <h1>iconfont</h1>
   <ul>
-  <!-- <em class="u-iconfont">&#xE002;</em> -->
+  <!-- <i class="u-iconfont">&#xE002;</i> -->
   {{demoHtml}}
   </li>
 </body>

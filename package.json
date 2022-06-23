@@ -1,6 +1,6 @@
 {
   "name": "svgs2fonts-c",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "On the basis of 'svgs2fonts' dependency, the corresponding CSS file is added to facilitate the introduction. At the same time, parameters are added to optimize the generation of results",
   "main": "index.js",
   "scripts": {
