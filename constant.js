@@ -7,7 +7,8 @@ module.exports = {
   fontNameReg: /\{\{fontName\}\}/g,
   demoCssReg: /\{\{demoCss\}\}/,
   demoHtmlReg: /\{\{demoHtml\}\}/,
-  iconBaseClass: "u-iconfont",
+  iconBaseClassReg: /\{\{iconBaseClass\}\}/g,
+  baseFontColorReg: /\{\{baseFontColor\}\}/,
   DEMO_CSS: `
 @font-face {
   font-family: '{{fontName}}';
@@ -18,15 +19,13 @@ module.exports = {
     url('{{fontName}}.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
     url('{{fontName}}.svg') format('svg');
 }
-  .u-iconfont{
+  .{{iconBaseClass}}{
     font-family: "{{fontName}}" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     display: inline-block;
-    width:90px;
-    height: 90px;
-    line-height: 90px;
+    color:{{baseFontColor}};
   }
   `,
   DEMO_HTML: `
@@ -56,12 +55,15 @@ module.exports = {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-    .u-iconfont{
+    .{{iconBaseClass}}{
     font-size:40px;
     cursor: pointer;
     transition:font-size 0.3s linear;
+    width:90px;
+    height: 90px;
+    line-height: 90px;
   }
-   .u-iconfont:hover{
+   .{{iconBaseClass}}:hover{
     font-size: 80px;
   }
   </style>
@@ -71,10 +73,10 @@ module.exports = {
   <title>iconfont demo</title>
 </head>
 <body>
-  <div style="display:flex;align-items:baseline;"><h1>fontClass用法：</h1><xmp><i class='u-iconfont icon-</xmp><b>xxxx</b><xmp>'></i></xmp></div>
-  <div style="display:flex;align-items:baseline;"><h1>unicode用法：</h1><xmp><i class='u-iconfont'>&#35811;</i></xmp></div>
+  <div style="display:flex;align-items:baseline;"><h1>fontClass用法：</h1><xmp><i class='{{iconBaseClass}} icon-</xmp><b>xxxx</b><xmp>'></i></xmp></div>
+  <div style="display:flex;align-items:baseline;"><h1>unicode用法：</h1><xmp><i class='{{iconBaseClass}}'>&#35811;</i></xmp></div>
   <ul>
-  <!-- <i class="u-iconfont">&#xE002;</i> -->
+  <!-- <i class="{{iconBaseClass}}">&#xE002;</i> -->
   {{demoHtml}}
   </li>
 </body>

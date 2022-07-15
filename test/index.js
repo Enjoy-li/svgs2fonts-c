@@ -5,14 +5,9 @@ svgs2fonts.init({
   dist: join(__dirname, "./fonts/"), // output path
   fontName: "svgs-to-fonts", // font name
   startNumber: 20000, // unicode start number
+  iconBaseClass: "sb-icon",
+  baseFontColor: "red",
   nodemo: true, // no demo html files
-  fontHeight: 1001,
-  svg2font: {
-    iconBaseClass: "sb-icon",
-    fontHeight: 1001,
-    normalize: true,
-    center: true,
-  },
 });
 
 /**
