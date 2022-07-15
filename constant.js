@@ -71,8 +71,8 @@ module.exports = {
   <title>iconfont demo</title>
 </head>
 <body>
-  <h1>iconfont</h1>
-  <xmp><i class='u-iconfont icon-xxxx'></i></xmp>
+  <div style="display:flex;align-items:baseline;"><h1>fontClass用法：</h1><xmp><i class='u-iconfont icon-</xmp><b>xxxx</b><xmp>'></i></xmp></div>
+  <div style="display:flex;align-items:baseline;"><h1>unicode用法：</h1><xmp><i class='u-iconfont'>&#35811;</i></xmp></div>
   <ul>
   <!-- <i class="u-iconfont">&#xE002;</i> -->
   {{demoHtml}}
