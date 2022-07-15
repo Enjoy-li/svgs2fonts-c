@@ -7,7 +7,12 @@ svgs2fonts.init({
   startNumber: 20000, // unicode start number
   nodemo: true, // no demo html files
   fontHeight: 1001,
-  svg2font: {},
+  svg2font: {
+    iconBaseClass: "sb-icon",
+    fontHeight: 1001,
+    normalize: true,
+    center: true,
+  },
 });
 
 /**

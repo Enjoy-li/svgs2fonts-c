@@ -25,12 +25,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-    .u-iconfont{
+    .sb-icon{
     font-size:40px;
     cursor: pointer;
     transition:font-size 0.3s linear;
   }
-   .u-iconfont:hover{
+   .sb-icon:hover{
     font-size: 80px;
   }
   </style>
@@ -45,12 +45,15 @@
     url('svgs-to-fonts.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
     url('svgs-to-fonts.svg') format('svg');
 }
-  .u-iconfont{
+  .sb-icon{
     font-family: "svgs-to-fonts" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     display: inline-block;
+    width:90px;
+    height: 90px;
+    line-height: 90px;
   }
   
 .icon-daichuli:before { content: "\8479"; }
@@ -64,9 +67,10 @@
 </head>
 <body>
   <h1>iconfont</h1>
+  <xmp><i class='sb-icon icon-xxxx'></i></xmp>
   <ul>
-  <!-- <i class="u-iconfont">&#xE002;</i> -->
-  <li><i class="u-iconfont icon-daichuli"></i><p>daichuli： .icon-daichuli</p></li><li><i class="u-iconfont icon-daimianshi"></i><p>daimianshi： .icon-daimianshi</p></li><li><i class="u-iconfont icon-dir2-offer"></i><p>dir2-offer： .icon-dir2-offer</p></li><li><i class="u-iconfont icon-loading"></i><p>loading： .icon-loading</p></li><li><i class="u-iconfont icon-offer"></i><p>offer： .icon-offer</p></li><li><i class="u-iconfont icon-shaixuan"></i><p>shaixuan： .icon-shaixuan</p></li>
+  <!-- <i class="sb-icon">&#xE002;</i> -->
+  <li><i class="sb-icon icon-daichuli"></i><p>sb-icon <br/> icon-<b>daichuli</b></p></li><li><i class="sb-icon icon-daimianshi"></i><p>sb-icon <br/> icon-<b>daimianshi</b></p></li><li><i class="sb-icon icon-dir2-offer"></i><p>sb-icon <br/> icon-<b>dir2-offer</b></p></li><li><i class="sb-icon icon-loading"></i><p>sb-icon <br/> icon-<b>loading</b></p></li><li><i class="sb-icon icon-offer"></i><p>sb-icon <br/> icon-<b>offer</b></p></li><li><i class="sb-icon icon-shaixuan"></i><p>sb-icon <br/> icon-<b>shaixuan</b></p></li>
   </li>
 </body>
 </html>

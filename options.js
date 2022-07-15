@@ -2,16 +2,21 @@
  * config file
  */
 
-const _emptyFunc = () => '';
+const _emptyFunc = () => "";
 
 module.exports = {
-  fontName: 'iconfont',
+  svg2font: {
+    fontHeight: 1001,
+    normalize: true,
+    center: true,
+  },
+  fontName: "iconfont",
   timeout: 60000,
   unicodeStart: 10000,
-  src: 'svg',
-  dist: 'dist',
-  demoUnicodeHTML: 'demo_unicode.html',
-  demoFontClassHTML: 'demo_fontclass.html',
+  src: "svg",
+  dist: "dist",
+  demoUnicodeHTML: "demo_unicode.html",
+  demoFontClassHTML: "demo_fontclass.html",
   logger: {
     log: _emptyFunc,
     error: _emptyFunc,

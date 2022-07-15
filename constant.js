@@ -7,6 +7,7 @@ module.exports = {
   fontNameReg: /\{\{fontName\}\}/g,
   demoCssReg: /\{\{demoCss\}\}/,
   demoHtmlReg: /\{\{demoHtml\}\}/,
+  iconBaseClass: "u-iconfont",
   DEMO_CSS: `
 @font-face {
   font-family: '{{fontName}}';
@@ -23,6 +24,9 @@ module.exports = {
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     display: inline-block;
+    width:90px;
+    height: 90px;
+    line-height: 90px;
   }
   `,
   DEMO_HTML: `
@@ -68,6 +72,7 @@ module.exports = {
 </head>
 <body>
   <h1>iconfont</h1>
+  <xmp><i class='u-iconfont icon-xxxx'></i></xmp>
   <ul>
   <!-- <i class="u-iconfont">&#xE002;</i> -->
   {{demoHtml}}

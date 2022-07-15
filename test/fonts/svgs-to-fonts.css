@@ -8,12 +8,15 @@
     url('svgs-to-fonts.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
     url('svgs-to-fonts.svg') format('svg');
 }
-  .u-iconfont{
+  .sb-icon{
     font-family: "svgs-to-fonts" !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     display: inline-block;
+    width:90px;
+    height: 90px;
+    line-height: 90px;
   }
   
 .icon-daichuli:before { content: "\8479"; }
