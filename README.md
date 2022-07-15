@@ -42,7 +42,8 @@ const svgs2fonts = require("svgs2fonts");
 svgs2fonts.init(options);
 ```
 
-`options`:
+`options`: 
+**请参考：** 根目录下，options.js文件
 
 - src: `{String}`, svg file dirname;
 - dir: `{String}`, output files path;

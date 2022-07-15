@@ -9,6 +9,7 @@ module.exports = {
   demoHtmlReg: /\{\{demoHtml\}\}/,
   iconBaseClassReg: /\{\{iconBaseClass\}\}/g,
   baseFontColorReg: /\{\{baseFontColor\}\}/,
+  activeFontColorReg: /\{\{activeFontColorReg\}\}/,
   DEMO_CSS: `
 @font-face {
   font-family: '{{fontName}}';
